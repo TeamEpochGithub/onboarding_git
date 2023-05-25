@@ -31,6 +31,5 @@ class AIEngineer:
         # Bug 14: Subtracting a string from an integer
         return 65 - "self.experience"
 
-    # Bug 8: Method with argument but no parameter
-    def add_experience(years):
+    def add_experience(self, years):
         self.experience += years
