@@ -11,7 +11,7 @@ class AIEngineer:
         self.projects = "projects"
 
     # Bug 3: Method not properly defined, colon missing
-    def average_project_score(self)
+    def average_project_score(self):
         # Bug 4: Division by zero error if the list is empty
         return sum(self.projects) / len(self.projects)
 
