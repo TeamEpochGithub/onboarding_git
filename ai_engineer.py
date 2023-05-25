@@ -17,7 +17,7 @@ class AIEngineer:
 
     def add_project_score(self, score):
         # Bug 5: Function parameter not used
-        self.projects.append(80)
+        self.projects.append(score)
 
     # Bug 6: Using single equals sign (assignment) instead of double (comparison)
     def is_promotion_due(self):
