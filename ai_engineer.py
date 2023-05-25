@@ -10,7 +10,7 @@ class AIEngineer:
         self.projects = ["project 0"]
 
     # Bug 3: Method not properly defined, colon missing
-    def average_project_score(self)
+    def average_project_score(self):
         # Bug 4: Division by zero error if the list is empty
         if len(self.projects) <= 0:
             return -1
