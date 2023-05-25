@@ -13,7 +13,10 @@ class AIEngineer:
     # Bug 3: Method not properly defined, colon missing
     def average_project_score(self)
         # Bug 4: Division by zero error if the list is empty
-        return sum(self.projects) / len(self.projects)
+        if len(self.projects) <= 0:
+            return -1
+        else:
+            return sum(self.projects) / len(self.projects)
 
     def add_project_score(self, score):
         # Bug 5: Function parameter not used
