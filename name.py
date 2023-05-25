@@ -8,7 +8,7 @@ def print_names(names):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    names = ["Jasper"]
+    names = ['Jasper', 'Tolga', "Hugo", "Jeffrey", 'Emiel']
     print_names(names)
 
 # klein testje
