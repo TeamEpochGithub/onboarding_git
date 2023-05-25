@@ -29,7 +29,7 @@ class AIEngineer:
             return False
 
     # Bug 7: Method not properly defined, colon missing
-    def years_to_retirement(self)
+    def years_to_retirement(self):
         # Bug 14: Subtracting a string from an integer
         return 65 - "self.experience"
 
