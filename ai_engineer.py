@@ -7,8 +7,7 @@ class AIEngineer:
         # Bug 1: Missing self in the constructor
         self.name = name
         self.experience = experience
-        # Bug 2: Using a string instead of the projects list
-        self.projects = "projects"
+        self.projects = ["project 0"]
 
     # Bug 3: Method not properly defined, colon missing
     def average_project_score(self)
