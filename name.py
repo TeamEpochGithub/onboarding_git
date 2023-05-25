@@ -6,7 +6,7 @@ def print_names(names):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_names('baasje1')
+    print_names('Emiel')
 
 # klein testje
 
