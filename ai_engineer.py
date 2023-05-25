@@ -7,13 +7,15 @@ class AIEngineer:
         # Bug 1: Missing self in the constructor
         self.name = name
         self.experience = experience
-        # Bug 2: Using a string instead of the projects list
-        self.projects = "projects"
+        self.projects = ["project 0"]
 
     # Bug 3: Method not properly defined, colon missing
     def average_project_score(self)
         # Bug 4: Division by zero error if the list is empty
-        return sum(self.projects) / len(self.projects)
+        if len(self.projects) <= 0:
+            return -1
+        else:
+            return sum(self.projects) / len(self.projects)
 
     def add_project_score(self, score):
         # Bug 5: Function parameter not used
@@ -31,6 +33,5 @@ class AIEngineer:
         # Bug 14: Subtracting a string from an integer
         return 65 - "self.experience"
 
-    # Bug 8: Method with argument but no parameter
-    def add_experience(years):
+    def add_experience(self, years):
         self.experience += years
