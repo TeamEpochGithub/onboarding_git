@@ -4,7 +4,6 @@
 
 class AIEngineer:
     def __init__(self, name, experience, projects):
-        # Bug 1: Missing self in the constructor
         self.name = name
         self.experience = experience
         self.projects = ["project 0"]
