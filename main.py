@@ -5,8 +5,7 @@ engineer = ai_engineer.AIEngineer("Jane Doe", 5, [85, 88, 90])
 
 print(engineer.name)
 
-# Bug 10: Method call missing parentheses
-average = engineer.average_project_score
+average = engineer.average_project_score()
 
 print("Average project score:", average)
 
