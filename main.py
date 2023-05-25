@@ -1,8 +1,7 @@
 # main.py
 import ai_engineer
 
-# Bug 9: Trying to access a non-existing module (should be 'ai_engineer' instead of 'ai_engineers')
-engineer = ai_engineers.AIEngineer("Jane Doe", 5, [85, 88, 90])
+engineer = ai_engineer.AIEngineer("Jane Doe", 5, [85, 88, 90])
 
 print(engineer.name)
 
