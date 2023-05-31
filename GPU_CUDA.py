@@ -1,4 +1,4 @@
-
+import torch
 ########################################################################
 # Okay, so what next?
 #
@@ -74,5 +74,5 @@ print(device)
 # .. _Chat with other users on Slack: https://pytorch.slack.com/messages/beginner/
 
 # %%%%%%INVISIBLE_CODE_BLOCK%%%%%%
-del dataiter
+
 # %%%%%%INVISIBLE_CODE_BLOCK%%%%%%

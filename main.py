@@ -10,6 +10,11 @@ from train import train_model
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+    # Assuming that we are on a CUDA machine, this should print a CUDA device:
+
+    print(device)
     batch_size, trainloader, testloader, classes = make_datasets()
     graph(trainloader, classes, batch_size)
     net = Net()
