@@ -1,4 +1,4 @@
-
+import torch
 ########################################################################
 # Okay, so what next?
 #
@@ -17,6 +17,13 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 # Assuming that we are on a CUDA machine, this should print a CUDA device:
 
 print(device)
+
+# Lets put tensors on device
+
+ten = torch.empty((3,3))
+print(ten)
+ten = ten.to(device)
+print(ten)
 
 ########################################################################
 # The rest of this section assumes that ``device`` is a CUDA device.
@@ -72,7 +79,3 @@ print(device)
 # .. _More tutorials: https://github.com/pytorch/tutorials
 # .. _Discuss PyTorch on the Forums: https://discuss.pytorch.org/
 # .. _Chat with other users on Slack: https://pytorch.slack.com/messages/beginner/
-
-# %%%%%%INVISIBLE_CODE_BLOCK%%%%%%
-del dataiter
-# %%%%%%INVISIBLE_CODE_BLOCK%%%%%%
