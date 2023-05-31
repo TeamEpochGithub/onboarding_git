@@ -1,11 +1,5 @@
 import torch
-########################################################################
-# 4. Train the network
-# ^^^^^^^^^^^^^^^^^^^^
-#
-# This is when things start to get interesting.
-# We simply have to loop over our data iterator, and feed the inputs to the
-# network and optimize.
+
 def train_model(trainloader, criterion, optimizer, net):
     for epoch in range(2):  # loop over the dataset multiple times
 

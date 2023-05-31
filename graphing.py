@@ -2,9 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torchvision
 
-########################################################################
-# Let us show some of the training images, for fun.
-# functions to show an image
 def graph(trainloader, classes, batch_size):
     def imshow(img):
         img = img / 2 + 0.5  # unnormalize
